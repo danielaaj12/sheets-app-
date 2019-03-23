@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <title>Sheets App</title>
+
+  <style>
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    th {
+      color: white;
+    }
+
+    td {
+      border: 2px solid rgb(52, 101, 162);
+    }
+
+    section {
+      background-color: white;
+      padding: 28px;
+      margin: 1px;
+      width: 95%;
+    }
+
+    .button-bold {
+      font-weight: bold;
+      margin-left: 3%;
+      width: 6%;
+    }
+
+    .button-italic {
+      font-weight: bold;
+      margin-left: 1%;
+      width: 6%;
+    }
+
+    .font-size-select {
+      font-weight: bold;
+      margin-left: 1%;
+      width: 6%;
+    }
+
+    h1 {
+      margin-left: 5%;
+      font-size: 48px;
+      margin-top: 4%;
+    }
+
+    th,
+    td {
+      background-color: rgb(72, 106, 122);
+      height: 50px;
+      width: 80px;
+    }
+
+    th{
+      background: rgb(238, 126, 6);
+    }
+
+    #tableContainer{
+      width: 67%;
+      margin-left: 5%;
+    }
+
+    p{
+      color: white;
+      text-align: center;
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <h1>Sheets App</h1>
+  <section>
+    <button class="button-bold">B</button>
+    <button class="button-italic">I</button>
+    <select class="font-size-select" name="font-size" id="js-font-size">
+      <option value="8">8px</option>
+      <option value="10">10px</option>
+      <option value="12">12px</option>
+      <option value="14">14px</option>
+      <option value="18">18px</option>
+      <option value="20">20px</option>
+    </select>
+  </section>
+
+  <table id="tableContainer">
+    <tr>
+      <th></th>
+      <th>
+        <button id="addColspan">+</button>
+      </th>
+    </tr>
+    <tr>
+      <th>
+        <button id="addRowspan">+</button>
+      </th>
+      <td id="addSheets"><p>Agregar más columnas</p>
+      </td>
+    </tr>
+  </table>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
